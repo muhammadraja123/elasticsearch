@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 RUN apt-get update -qqy && apt-get install -qqy samba ldap-utils
 ADD . /fixture
 RUN chmod +x /fixture/src/main/resources/provision/installsmb.sh
